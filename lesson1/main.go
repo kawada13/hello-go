@@ -11,6 +11,7 @@ func main() {
 	ch1 <- 1
 	ch1 <- 1
 	ch1 <- 1
+	ch1 <- 1
 
 	fmt.Println(len(ch1))
 
