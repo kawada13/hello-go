@@ -7,6 +7,7 @@ func Sum(s ...int) {
 	fmt.Println(s)
 	fmt.Println(s)
 	fmt.Println(s)
+	fmt.Println(s)
 }
 
 func main() {
