@@ -6,6 +6,7 @@ func Sum(c chan int) {
 	s := <-c
 	fmt.Println(s)
 	fmt.Println(s)
+	fmt.Println(s)
 }
 
 func main() {
