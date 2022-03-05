@@ -13,9 +13,12 @@ func main() {
 	go Sum(ch1)
 
 	i := 0
+	ss := 0
 
 	for i < 100 {
 		ch1 <- i
 		i++
 	}
+
+	fmt.Println(ss)
 }
