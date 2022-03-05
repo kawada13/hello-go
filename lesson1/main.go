@@ -2,20 +2,19 @@ package main
 
 import "fmt"
 
-func Sum(s ...int) {
-	fmt.Println(s)
-	fmt.Println(s)
+func Sum(c chan int) {
+	s := <-c
 	fmt.Println(s)
 }
 
 func main() {
 	ch1 := make(chan int)
-	ch1 <- 1
+	go Sum(ch1)
 
-	ch1 <- 1
-	ch1 <- 1
-	ch1 <- 1
+	i := 0
 
-	fmt.Println(len(ch1))
-
+	for i < 100 {
+		ch1 <- i
+		i++
+	}
 }
